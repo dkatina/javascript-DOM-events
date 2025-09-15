@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling Demo</title>
+    <style>
+        .demo-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .output {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            min-height: 100px;
+        }
+        .highlight {
+            background-color: yellow;
+            padding: 2px 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <h1>Event Handling Demo</h1>
+        
+        <h2>Mouse Events</h2>
+        <button id="clickBtn" class="button">Click Me!</button>
+        <button id="hoverBtn" class="button">Hover Over Me!</button>
+        
+        <h2>Keyboard Events</h2>
+        <input type="text" id="keyboardInput" placeholder="Type something..." style="padding: 10px; width: 300px;">
+        
+        <h2>Form Events</h2>
+        <form id="demoForm">
+            <input type="text" id="formInput" placeholder="Form input..." style="padding: 10px; width: 300px;">
+            <button type="submit" class="button">Submit</button>
+        </form>
+        
+        <div id="output" class="output">
+            <p>Event output will appear here...</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
