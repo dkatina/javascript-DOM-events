@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="task-manager">
+    <h3>Dynamic Task Manager</h3>
+    <form id="taskForm">
+        <input type="text" id="taskInput" placeholder="Enter new task..." required>
+        <button type="submit" class="button">Add Task</button>
+    </form>
+    <ul id="taskList" class="task-list">
+        <!-- Tasks will be added dynamically -->
+    </ul>
+    <div id="taskStats">
+        <p>Total: <span id="totalTasks">0</span> | 
+           Completed: <span id="completedTasks">0</span> | 
+           Remaining: <span id="remainingTasks">0</span></p>
+    </div>
+    <script src="scripts.js"></script>
+</div>
+</body>
+</html>
